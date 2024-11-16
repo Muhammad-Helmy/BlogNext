@@ -5,7 +5,7 @@ const page = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push('/admin/blogList'); // Redirect ke /admin/bloglist
+    router.push('/'); // Redirect ke /admin/bloglist
   }, [router]);
 
   return (
