@@ -1,9 +1,18 @@
-import React from 'react'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+  const router = useRouter();
 
-export default page
+  useEffect(() => {
+    router.push('/admin/blogList'); // Redirect ke /admin/bloglist
+  }, [router]);
+
+  return (
+    <div>
+      <p>Redirecting...</p>
+    </div>
+  );
+};
+
+export default page;
